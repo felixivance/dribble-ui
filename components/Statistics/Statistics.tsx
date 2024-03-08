@@ -5,7 +5,7 @@ import { FaArrowUpLong } from "react-icons/fa6";
 
 const Statistics = () => {
   return (
-    <div className="flex flex-col bg-gray-200">
+    <div className="flex flex-col bg-[#f9f9f9]">
       <div className="flex justify-between">
         <p>Your key to strategic success through analytics</p>
         <p>

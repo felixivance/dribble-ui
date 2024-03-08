@@ -6,7 +6,7 @@ import { IoPlayCircle } from "react-icons/io5";
 
 export default function Banner() {
   return (
-    <div className="flex flex-col justify-between  bg-white shadow-md p-20">
+    <div className="flex flex-col justify-between  bg-white p-20 space-y-3">
       <div className="flex w-full items-center justify-center">
         <div className="w-[40%]">
           <div className="flex justify-center">
@@ -22,7 +22,7 @@ export default function Banner() {
               <p className="text-8xl text-black">Analytics</p>
             </div>
           </div>
-          <div className="flex items-center justify-center text-8xl space-x-3">
+          <div className="flex items-center text-8xl space-x-3 pt-4">
             <p>that</p>
             <p className="text-[#cccccc]">helps</p>
             <p>you</p>
@@ -30,7 +30,7 @@ export default function Banner() {
         </div>
         <div className="flex -pl-10 relative">
           <div>
-            <IoPlayCircle className="absolute text-3xl -top-3 -left-3 text-[#fe4a22]" />
+            <IoPlayCircle className="absolute text-4xl -top-3 -left-3 text-[#fe4a22]" />
           </div>
           <div>
             <Image

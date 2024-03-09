@@ -10,7 +10,7 @@ export default function Banner() {
       <div className="flex w-full items-center justify-center">
         <div className="w-[40%]">
           <div className="flex justify-center">
-            <div className="flex items-center relative">
+            <div className="flex items-center relative pr-6">
               <div className="p-8 rounded-full bg-gray-200">
                 <ImPower className="text-[#fe4a22] text-4xl" />
               </div>

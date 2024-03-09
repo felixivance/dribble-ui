@@ -8,7 +8,7 @@ const EfficiencySection = () => {
         <p>
           Maximize <span className="text-gray-400">efficiency</span>{" "}
         </p>
-        <p></p>
+
         <p>with our intuitive</p>
       </div>
       <div className="flex justify-between h-[150px] pt-8">

@@ -34,7 +34,7 @@ export default function Banner() {
           </div>
           <div>
             <Image
-              src="https://source.unsplash.com/800x600/?analytics"
+              src="https://source.unsplash.com/800x600/?computer"
               alt="analytics"
               className="rounded-md"
               width={300}

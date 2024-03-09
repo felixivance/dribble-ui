@@ -4,7 +4,7 @@ const CTA = () => {
   return (
     <div className=" p-16  ">
       <div className="flex justify-between items-center  border-t">
-        <div className="pt-16">
+        <div className="pt-16 text-base">
           <div className=""></div>
           <p>
             Explore traffic sources, page behavior, conversions and more to gain
@@ -23,6 +23,10 @@ const CTA = () => {
             start for free
           </button>
         </div>
+      </div>
+      <div className="">
+        {/*  eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/sp.png" alt="img" />
       </div>
     </div>
   );

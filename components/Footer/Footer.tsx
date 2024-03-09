@@ -55,10 +55,11 @@ const Footer = () => {
         <div className="w-1/2">
           <p className="text-[100px]">Ramos®</p>
         </div>
-        <div className="w-1/2 flex justify-end">
+        <div className="w-1/2 flex justify-between items-center">
           <p className="text-gray-400 font-light mr-4">Privacy Policy</p>
           <p className="text-gray-400 font-light mx-4">License Agreement</p>
-          <p className="text-gray-400 font-light ml-4">Privacy Policy</p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/qr.png" alt="visa" style={{ width: "10%" }} />
         </div>
       </div>
     </footer>

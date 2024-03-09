@@ -5,6 +5,7 @@ import Statistics from "@/components/Statistics/Statistics";
 import EfficiencySection from "@/components/Efficiency/EfficiencySection";
 import CTA from "@/components/CallToAction/CTA";
 import GetStarted from "@/components/GetStarted/GetStarted";
+import DataSection from "@/components/DataSection/DataSection";
 
 export const metadata = {
   title: "MoniePoint - Dribble exercise",
@@ -31,8 +32,12 @@ export default function Home() {
         <CTA />
       </section>
       <section>
+        <DataSection />
+      </section>
+      <section>
         <GetStarted />
       </section>
+
       <section>
         <Footer />
       </section>

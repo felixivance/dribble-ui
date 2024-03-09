@@ -5,7 +5,7 @@ import { FaArrowUpLong } from "react-icons/fa6";
 
 const Statistics = () => {
   return (
-    <div className="flex flex-col bg-[#f9f9f9] p-16 rounded-r-xl rounded-l-xl">
+    <div className="flex flex-col bg-[#f9f9f9] p-16 rounded-3xl">
       <div className="flex justify-between">
         <p className="text-6xl">
           Your key to strategic <br /> success through analytics
@@ -15,8 +15,8 @@ const Statistics = () => {
           real time?
         </p>
       </div>
-      <div className="grid grid-cols-2 pt-12 gap-5">
-        <div className="grid grid-cols-2 border rounded-2xl pt-14 bg-white shadow-md ">
+      <div className="grid grid-cols-3 pt-12 gap-5">
+        <div className="col-span-2 grid grid-cols-2 border rounded-2xl pt-14 pb-14 bg-white shadow-md ">
           <div className="flex flex-col justify-between  pl-12 pr-12">
             <button className="bg-[#ffd025] shadow-md rounded-md w-44 px-4 py-2">
               Setting up reports
@@ -46,16 +46,16 @@ const Statistics = () => {
                 </div>
               </div>
 
-              <div className="bg-[#f6f6f6] px-3 pt-4 rounded-md">
+              <div className="bg-[#f6f6f6] px-3 pt-4 rounded-md ">
                 <div>
                   <p>Visitors</p>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-0.5 dark:bg-gray-700">
+                <div className="w-full rounded-full  dark:bg-gray-700">
                   <div
                     className="bg-[#48c784] h-0.5 rounded-full"
                     style={{ width: "45%" }}
                   ></div>
-                  <div className="flex pt-4">
+                  <div className="flex pt-4 ">
                     <div>
                       <p className="text-2xl">56K</p>
                     </div>
@@ -71,60 +71,73 @@ const Statistics = () => {
             </div>
           </div>
         </div>
-        <div className="bg-black text-white rounded-2xl">
-          <div className="flex space-x-2">
-            <div className="flex flex-col">
+        <div className="flex flex-col bg-black text-white rounded-2xl px-16">
+          <div className="grid grid-cols-2 gap-2 p-6">
+            <div className="flex flex-col pt-4 space-y-4 items-center border border-gray-500 rounded-2xl ">
               <div className="flex items-center justify-center">
-                <BsStack className="text-yellow-500" />
+                <BsStack className="text-yellow-500 text-4xl" />
               </div>
-              <div className="flex">
+              <div className="flex relative  bg-red-600 w-full">
                 <Image
-                  src="https://source.unsplash.com/800x600/?profile-picture"
-                  className="rounded-full"
+                  src="https://source.unsplash.com/400x400/?african-man-smiling-face"
+                  className="rounded-full absolute left-16"
                   alt="Laptop with bar graphs"
-                  width={100}
-                  height={100}
+                  width={40}
+                  height={40}
                 />
                 <Image
-                  src="https://source.unsplash.com/800x600/?profile-picture"
+                  src="https://source.unsplash.com/400x400/?african-woman-smiling-face"
                   alt="Laptop with bar graphs"
-                  className="rounded-full"
-                  width={100}
-                  height={100}
+                  className="rounded-full absolute left-24"
+                  width={40}
+                  height={40}
                 />
               </div>
             </div>
-            <div className="flex flex-col">
-              <p>Transactions</p>
-              <div className="flex  text-end justify-end">
-                <div className="flex bg-green-600 p-2 rounded-full">
-                  <FaArrowUpLong className="text-white" />
+            <div className="flex flex-col pt-4 space-y-4 items-center border border-gray-500 rounded-2xl">
+              <div>
+                <p>Transactions</p>
+              </div>
+              <div className="flex justify-end text-end pl-12">
+                <div className="flex bg-green-600 p-1 rounded-full">
+                  <FaArrowUpLong className="text-white text-xs" />
                 </div>
-                <p className="text-green-600">+14%</p>
+                <div>
+                  <p className="text-green-600 text-xs">+14%</p>
+                </div>
               </div>
               <div>
-                <p>43K</p>
+                <p className="text-4xl">43K</p>
               </div>
             </div>
           </div>
-          <div>
-            <p>Widget Control</p>
-            <p>
-              Reports provide a comprehensive overview of important aspect of
-              web analytics
-            </p>
+          <div className="flex flex-col items-center justify-center pb-8  ">
+            <div className="text-center">
+              <p className="text-2xl">Widget Control</p>
+            </div>
+            <div className="">
+              <p className="text-gray-400 text-center px-6">
+                Reports provide a comprehensive overview of important aspect of
+                web analytics
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <p>
-          up to 45% increase your analytics efficiency by upto 45%. Unique
-          <br />
-          algorithms provide insights from data, reduce time for analysis and
-          <br />
-          save time for making important, informed decisions
-          <br />
-        </p>
+
+      <div className="flex justify-center items-center pt-8 px-96 w-full">
+        {/* create 3 boxes */}
+        <div className=" h-[150px]  flex items-end">
+          <p className="text-lg">Upto</p>
+        </div>
+        <div className=" h-[150px] flex items-end">
+          <p className="text-9xl">45%</p>
+        </div>
+        <div className=" h-[150px] flex-1 flex items-center text-lg">
+          increase your analytics efficiency by upto 45%. Unique algorithms
+          provide insights from data, reduce time for analysis and save time for
+          making important, informed decisions
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,21 @@
+"use client";
 import React from "react";
 import { PiPulseBold } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 const EfficiencySection = () => {
   return (
-    <div className="p-16">
+    <motion.div
+      className="p-16"
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 125,
+        delay: 0.1,
+        duration: 0.7,
+      }}
+    >
       <div className="text-9xl ">
         <p>
           Maximize <span className="text-gray-400">efficiency</span>{" "}
@@ -30,7 +42,7 @@ const EfficiencySection = () => {
           <p>server</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,11 +1,27 @@
+"use client";
+import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { BsStack } from "react-icons/bs";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 const Statistics = () => {
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, Math.round);
+  useEffect(() => {
+    const animation = animate(count, 43, {
+      duration: 2,
+    });
+
+    return animation.stop;
+  }, [count]);
+
   return (
-    <div className="flex flex-col bg-[#f9f9f9] p-16 rounded-3xl">
+    <motion.div
+      className="flex flex-col bg-[#f9f9f9] p-16 rounded-3xl"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+    >
       <div className="flex justify-between">
         <p className="text-6xl">
           Your key to strategic <br /> success through analytics
@@ -107,7 +123,7 @@ const Statistics = () => {
                 </div>
               </div>
               <div>
-                <p className="text-4xl">43K</p>
+                <motion.h1 className="text-4xl">43K</motion.h1>
               </div>
             </div>
           </div>
@@ -139,7 +155,7 @@ const Statistics = () => {
           making important, informed decisions
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,8 +1,20 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const CTA = () => {
   return (
-    <div className=" p-16  ">
+    <motion.div
+      className=" pt-16 pb-16  "
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 125,
+        delay: 0.1,
+        duration: 0.7,
+      }}
+    >
       <div className="flex justify-between items-center  border-t">
         <div className="pt-16 text-base">
           <div className=""></div>
@@ -24,11 +36,11 @@ const CTA = () => {
           </button>
         </div>
       </div>
-      <div className="">
+      <div className="w-full pt-4">
         {/*  eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/sp.png" alt="img" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,3 +1,0 @@
-{
-    "presets": ["@babel/preset-react","@babel/preset-env"] //"@babel/preset-typescript" commented out due to vercel deployment error
-  }

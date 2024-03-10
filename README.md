@@ -20,4 +20,8 @@ Visit http://localhost:3000
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+[url=https://postimg.cc/jDSW18JT][img]https://i.postimg.cc/jDSW18JT/Screenshot-2024-03-10-at-14-29-44.png[/img][/url]
+
+[url=https://postimg.cc/rKcR1yVK][img]https://i.postimg.cc/rKcR1yVK/Screenshot-2024-03-10-at-14-29-54.png[/img][/url]
+
+[url=https://postimg.cc/V09SxpRf][img]https://i.postimg.cc/V09SxpRf/Screenshot-2024-03-10-at-14-30-02.png[/img][/url]

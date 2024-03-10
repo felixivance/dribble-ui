@@ -16,7 +16,7 @@ const CTA = () => {
       }}
     >
       <div className="flex justify-between items-center  border-t">
-        <div className="pt-16 text-base">
+        <div className="pt-16 px-16 text-base">
           <div className=""></div>
           <p>
             Explore traffic sources, page behavior, conversions and more to gain
@@ -27,7 +27,7 @@ const CTA = () => {
             it evolves.
           </p>
         </div>
-        <div className="flex space-x-3">
+        <div className="flex space-x-3 pr-16">
           <button className="bg-[#f2f2f2] rounded-lg px-6 py-4">
             Request a demo
           </button>

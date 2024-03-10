@@ -37,7 +37,7 @@ const EfficiencySection = () => {
           </div>
         </div>
         {/* spanning text */}
-        <div className="bg-[#ffd025] flex items-center rounded-[40px] w-[650px] overflow-scroll text-9xl space-x-4 py-20 px-10 ">
+        <div className="bg-[#ffd025] flex items-center rounded-[40px] w-[650px] overflow-x-scroll overflow-y-hidden text-9xl space-x-4 py-20 px-10 ">
           <p className="">Analytics </p>
           <p>server</p>
         </div>

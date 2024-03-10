@@ -6,6 +6,22 @@
 - Similar to almost alike font and images
 - Tests to test the components
 
+## TOOLS USED
+
+- NextJs
+- Typescript
+- Framer Motion
+- Jest
+- React Testing Library
+- Tailwind
+- React Icons
+
+To run this project run
+
+```bash
+  yarn run dev
+```
+
 ## INSTALLATION
 
 To run this project run
